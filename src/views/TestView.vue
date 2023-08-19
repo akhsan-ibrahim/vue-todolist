@@ -1,18 +1,16 @@
 <script setup>
 import { ref } from 'vue'
 import { useListStore } from '@/stores/lists'
-
 // store container
 const store = useListStore()
-
 // initial input / default input
 const defaultInput = {
   name: '',
   hobby: ''
 }
-
+// ref input
+// spread syntax
 const input = ref({ ...defaultInput })
-
 // function yg menerima submit form
 function onSubmit() {
   // event.preventDefault();
@@ -25,7 +23,7 @@ function onSubmit() {
 <template>
   <div class="container">
     <h1>Test</h1>
-    
+
     <!-- add v-model to integrate data binding with ref -->
     <!-- add event handler listener when keyup enter -->
     <!-- method handler with addList function -->
@@ -45,7 +43,6 @@ function onSubmit() {
     </ol>
   </div>
 </template>
-
 <!-- style default bersifat global -->
 <!-- scoped untuk melimitasi hanya di komponen -->
 <style scoped lang="scss">

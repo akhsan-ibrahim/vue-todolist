@@ -20,7 +20,7 @@ export const useListStore = defineStore('list', () => {
   // action
   function addList(params) {
     if (params) {
-      list.push({ params })
+      list.push(params)
     }
   }
 
