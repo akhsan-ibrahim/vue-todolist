@@ -36,8 +36,8 @@ function onSubmit() {
     <!-- method handler with addList function -->
     <!-- event modifier .enter, .prevent -->
     <form class="form" @submit.prevent="onSubmit">
-      <BaseInput class="input" v-model="input.name" name="name" placeholder="John" />
-      <BaseInput class="input" v-model="input.hobby" name="hobby" placeholder="Gaming" />
+      <BaseInput class="input" v-model="input.name" name="name" placeholder="John" required/>
+      <BaseInput class="input" v-model="input.hobby" name="hobby" placeholder="Gaming" required/>
       <BaseInput v-model="input.description" name="description" placeholder="Everyday" />
       <button type="submit">Submit</button>
     </form>
